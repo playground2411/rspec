@@ -1,4 +1,6 @@
-example_id                | status | run_time        |
-------------------------- | ------ | --------------- |
-./spec/hello_spec.rb[1:1] | passed | 0.00075 seconds |
-./spec/test_spec.rb[1:1]  | passed | 0.00067 seconds |
+example_id                        | status | run_time        |
+--------------------------------- | ------ | --------------- |
+./spec/hello_spec.rb[1:1]         | passed | 0.00075 seconds |
+./spec/test_spec.rb[1:1]          | passed | 0.00067 seconds |
+./spec/weather_spec.rb[1:1:1]     | passed | 0.00074 seconds |
+./spec/weather_spec.rb[1:1:2:1:1] | passed | 0.00015 seconds |
