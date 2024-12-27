@@ -13,6 +13,13 @@ RSpec.describe Weather do
           ).to eq "今日は晴れです！ワクワク"
         end
       end
+      context '引数が雪の場合' do
+        it "悟空になる" do
+          expect(
+            Weather.new("snow").todays_weather
+          ).to eq "今日は晴れです！ワクワクすっぞ！！"
+        end
+      end
     end
   end
 end

@@ -3,6 +3,14 @@ class Weather
     @status = params
   end
   def todays_weather
-    "今日は晴れです！#{"ワクワク" if @status=="rain"}"
+    case @status
+    when "rain" then
+      emotion = "ワクワク"
+    when "snow" then
+      emotion = "ワクワクすっぞ！！"
+    else
+      emotion = nil
+    end
+    "今日は晴れです！#{emotion}"
   end
 end
