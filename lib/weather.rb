@@ -2,7 +2,7 @@ class Weather
   def initialize(params=nil)
     @status = params
   end
-  def todays_weather
+  def emote_by_weather
     case @status
     when "rain" then
       emotion = "ワクワク"
