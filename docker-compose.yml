@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rails:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - "1000:3000"
+    tty: true
