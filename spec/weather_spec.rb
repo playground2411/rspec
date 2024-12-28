@@ -7,7 +7,7 @@ RSpec.describe Weather do
     end
     context "引数がある場合" do
       context '引数が雨の場合' do
-        it "嬉しがってくれる", :focus do
+        it "嬉しがってくれる" do
           expect(
             Weather.new("rain").emote_by_weather
           ).to eq "今日は晴れです！ワクワク"
